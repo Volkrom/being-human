@@ -67,6 +67,7 @@ body {
 }
 .wrapper {
     width: 90%;
+    max-width: 1400px;
     margin:0 auto;
 }
 .d-flex {
@@ -152,3 +153,27 @@ header a {
 /* END MAIN STYLES */
 
 /* Responsive styles*/
+@media only screen and (max-width: 1094px) {
+    body {
+      background-color: lightblue;
+    }
+    header a {
+        margin:1em 1em ;
+    }
+  }
+  @media only screen and (max-width: 915px) {
+    body {
+      background-color:bisque;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+      body {
+          background-color: darkslategray;
+      }
+    .hero {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gradient {
+        display: none;
+    }
+  }
