@@ -65,15 +65,64 @@ small, .text_small {font-size: 0.667rem;}
 body {
     background-color: #132e31;
 }
+.wrapper {
+    width: 90%;
+    margin:0 auto;
+}
+.d-flex {
+    display: flex;
+}
+.v-center {
+    align-items: center;
+}
+.h-center {
+    justify-content: center;
+}
 /* END GLOBAL STYLES */
 
 /* Main styles*/
 header a {
     text-decoration: none;
     color: white;
+    margin: 1em 4em;
 }
 #main_logo {
     height: 4em;
+}
+.hero {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 6em 0;
+}
+.hero-top {
+    color: #e5ddd2;
+}
+.hero-top a {
+    color: #32877f;
+}
+.slogan {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slogan h1 {
+    font-weight: 900;
+    color: #e5ddd2;
+}
+.hero-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #3b807c;
+}
+.hero div {
+    width: 70%;
 }
 /* END MAIN STYLES */
 
